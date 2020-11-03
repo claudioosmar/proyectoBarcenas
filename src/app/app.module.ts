@@ -6,10 +6,12 @@ import { GeneradorBarajaComponent } from './baraja/generador-baraja/generador-ba
 import { AdministradorComponent } from './baraja/administrador/administrador.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { PantallaSeleccionComponent } from './baraja/pantalla-seleccion/pantalla-seleccion.component';
 
 const routes:Routes = [
   {path:'',component:AdministradorComponent},
-  {path:'inicio',component:AppComponent}
+  {path:'inicio',component:AppComponent},
+  {path:'juegoUno', component:GeneradorBarajaComponent}
 ]
 
 @NgModule({
@@ -18,7 +20,8 @@ const routes:Routes = [
     GeneradorBarajaComponent,
     AdministradorComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    PantallaSeleccionComponent
   ],
   imports: [
     BrowserModule,
