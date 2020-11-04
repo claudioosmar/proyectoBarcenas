@@ -10,7 +10,7 @@
         nombre de usuario:
       </h2>
 
-      <input class="w-100" type="text" id="lname" name="lname"><br>
+      <input #user class="w-100" type="text" id="lname" name="lname"><br>
     </div>
 
   </div>
@@ -20,12 +20,12 @@
         contraseña:
       </h2>
 
-      <input class="w-100" type="text" id="lname" name="lname"><br>
+      <input #pass class="w-100" type="text" id="lname" name="lname"><br>
     </div>
 
   </div>
   <div class="w-100 h-50" style="justify-content: center; margin-left: 39%; padding: 2%;">
-    <button class = "l-10" (click)="pagina()">Iniciar Sesion</button>
+    <button class = "l-10" (click)="pagina(user.value,pass.value)">Iniciar Sesion</button>
     <button class = "l-10" style="margin-left: 5%;" >Registrar Usuario</button>
   </div>
 </div>

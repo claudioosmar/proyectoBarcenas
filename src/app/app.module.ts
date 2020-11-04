@@ -8,6 +8,7 @@ import { AdministradorComponent } from './baraja/administrador/administrador.com
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PantallaSeleccionComponent } from './baraja/pantalla-seleccion/pantalla-seleccion.component';
+import { ConexionService } from './services/conexion.service';
 
 const routes:Routes = [
   {path:'',component:AdministradorComponent},
@@ -29,7 +30,7 @@ const routes:Routes = [
     HttpClientModule,
     RouterModule.forRoot(routes,{useHash:true})
   ],
-  providers: [],
+  providers: [ConexionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
