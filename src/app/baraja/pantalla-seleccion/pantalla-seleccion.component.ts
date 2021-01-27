@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pantalla-seleccion',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PantallaSeleccionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
   }
-
+  pagina(){ 
+    this.route.navigate(['juegoCartas']);
+    console.log('mandar a baraja');
+  }
 }

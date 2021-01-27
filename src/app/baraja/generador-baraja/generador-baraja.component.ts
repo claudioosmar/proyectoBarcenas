@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class GeneradorBarajaComponent implements OnInit {
   cartasSeleccionadas : String[] = [];
   idCartas : String[] = [];
+  persona : String;
 
   constructor() { }
 

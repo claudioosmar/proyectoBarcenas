@@ -14,7 +14,7 @@ export class AdministradorComponent implements OnInit {
   }
 
   pagina(){ 
-    this.route.navigate(['juegoUno']);
-    console.log('mandar a baraja');
+    this.route.navigate(['pantallaSeleccion']);
+    console.log('se abrio pantalla seleccion');
   }
 }

@@ -11,7 +11,8 @@ import { PantallaSeleccionComponent } from './baraja/pantalla-seleccion/pantalla
 const routes:Routes = [
   {path:'',component:AdministradorComponent},
   {path:'inicio',component:AppComponent},
-  {path:'juegoUno', component:GeneradorBarajaComponent}
+  {path:'juegoCartas', component:GeneradorBarajaComponent},
+  {path:'pantallaSeleccion',component:PantallaSeleccionComponent}
 ]
 
 @NgModule({
